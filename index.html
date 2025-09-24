@@ -3,12 +3,58 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Shubham Thakar • Portfolio</title>
-  <meta name="description" content="Portfolio of Shubham Thakar — FinTech student passionate about AI, Web Development, and Robotics.">
+  <title>Shubham Thakar • FinTech Portfolio & Projects</title>
+  <meta name="description" content="FinTech student at Gujarat University. AI, Web Dev (HTML, CSS, PHP, React, WordPress), Python, Java, SQL. Robotics, AI & IoT @ IIT Mandi.">
+  <link rel="canonical" href="https://your-domain.example/" />
+  <meta name="author" content="Shubham Thakar">
+  <meta name="theme-color" content="#0b0f17" />
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Shubham Thakar • FinTech Portfolio & Projects">
+  <meta property="og:description" content="FinTech student at Gujarat University. AI, Web Dev, Python, Java, SQL. Robotics, AI & IoT @ IIT Mandi.">
+  <meta property="og:url" content="https://your-domain.example/">
+  <meta property="og:image" content="https://your-domain.example/og-image.jpg">
+  
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Shubham Thakar • FinTech Portfolio & Projects">
+  <meta name="twitter:description" content="FinTech student at Gujarat University. AI, Web Dev, Python, Java, SQL. Robotics, AI & IoT @ IIT Mandi.">
+  <meta name="twitter:image" content="https://your-domain.example/og-image.jpg">
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/favicon.png">
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
+  <meta name="robots" content="index,follow" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles.css">
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Shubham Thakar",
+    "url": "https://your-domain.example/",
+    "jobTitle": "FinTech Student",
+    "affiliation": {
+      "@type": "CollegeOrUniversity",
+      "name": "Gujarat University"
+    },
+    "knowsAbout": [
+      "FinTech", "Artificial Intelligence", "Python", "Java", "SQL", "HTML", "CSS", "PHP", "React", "WordPress", "Robotics", "IoT"
+    ],
+    "description": "FinTech student with AI, Web Dev, and Robotics experience (IIT Mandi).",
+    "alumniOf": "Gujarat University",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "IN",
+      "addressRegion": "Gujarat"
+    }
+  }
+  </script>
 </head>
 <body>
   <header class="site-header">
@@ -143,11 +189,27 @@
     <section id="contact" class="section container">
       <h2>Contact</h2>
       <p>Open to internships, collaborations, and project work in FinTech, AI, and web development.</p>
-      <ul class="contact-list">
-        <li>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></li>
-        <li>Phone: <a href="tel:+910000000000">+91 00000 00000</a></li>
-        <li>Location: Gujarat, India</li>
-      </ul>
+      <div class="grid two">
+        <div>
+          <ul class="contact-list">
+            <li>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></li>
+            <li>Phone: <a href="tel:+910000000000">+91 00000 00000</a></li>
+            <li>Location: Gujarat, India</li>
+          </ul>
+        </div>
+        <div>
+          <form action="https://formspree.io/f/your_form_id" method="POST" class="card" id="contact-form">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" required style="width:100%;margin:6px 0 10px;padding:10px;border-radius:8px;border:1px solid var(--outline);background:transparent;color:var(--text);">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required style="width:100%;margin:6px 0 10px;padding:10px;border-radius:8px;border:1px solid var(--outline);background:transparent;color:var(--text);">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required style="width:100%;margin:6px 0 10px;padding:10px;border-radius:8px;border:1px solid var(--outline);background:transparent;color:var(--text);"></textarea>
+            <input type="text" name="_gotcha" style="display:none">
+            <button type="submit" class="btn btn-primary">Send</button>
+          </form>
+        </div>
+      </div>
     </section>
   </main>
 
@@ -161,5 +223,8 @@
   <script src="assets/js/main.js"></script>
 </body>
 </html>
+
+
+
 
 
